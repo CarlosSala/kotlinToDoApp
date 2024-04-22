@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">ToDoApp</string>
+
+    <string name="todo_hello_welcome_friends">Hello, welcome friends</string>
+    <string name="todo_categories">Categories</string>
+    <string name="todo_tasks">Tasks</string>
+    <string name="fab_description">fab_description</string>
+    <string name="add_a_task">Add a task</string>
+    <string name="todo_dialog_business">Business</string>
+    <string name="todo_dialog_personal">Personal</string>
+    <string name="todo_dialog_others">Others</string>
+    <string name="create_task">Create task</string>
+    <string name="btn_super_hero_app">super hero app</string>
+    <string name="combat">Combat</string>
+    <string name="power">Power</string>
+    <string name="durability">Durability</string>
+    <string name="speed">Speed</string>
+    <string name="strength">Strength</string>
+    <string name="intelligence">Intelligence</string>
+    <string name="dark_mode">Dark mode</string>
+    <string name="change_to_dark_mode_your_cellphone">change to dark mode your cellphone</string>
+    <string name="activate_bluetooth">Activate Bluetooth</string>
+    <string name="connect_your_devices_without_wires">Connect your devices without wires</string>
+    <string name="volume_up">Volume up</string>
+    <string name="vibration_on_calls">Vibration on calls</string>
+    <string name="btn_settings_app">Settings app</string>
+    <string name="btn_reactive_app">Reactive app</string>
+    <string name="Course">Course rv</string>
+    <string name="original_language">Original language</string>
+    <string name="original_title">Original title</string>
+    <string name="release_date">Release date</string>
+    <string name="popularity">popularity</string>
+    <string name="vote_average">Vote average</string>
+
+</resources>
