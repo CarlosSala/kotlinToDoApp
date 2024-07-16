@@ -3,8 +3,6 @@ package com.example.todoapp
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.androidmaster.todoapp.CategoriesViewHolder
-import com.example.todoapp.TaskCategory
 import com.example.todoapp.databinding.ItemTaskCategoryBinding
 
 

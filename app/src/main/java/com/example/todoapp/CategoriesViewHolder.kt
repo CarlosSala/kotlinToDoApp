@@ -1,12 +1,7 @@
-package com.example.androidmaster.todoapp
+package com.example.todoapp
 
-import android.view.View
-import android.widget.TextView
-import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
-import com.example.todoapp.R
-import com.example.todoapp.TaskCategory
 import com.example.todoapp.databinding.ItemTaskCategoryBinding
 
 
