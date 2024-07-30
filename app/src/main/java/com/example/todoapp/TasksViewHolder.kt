@@ -6,7 +6,7 @@ import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.example.todoapp.databinding.ItemTodoTaskBinding
 
-class TasksViewHolder(var binding: ItemTodoTaskBinding) : RecyclerView.ViewHolder(binding.root) {
+class TasksViewHolder(private var binding: ItemTodoTaskBinding) : RecyclerView.ViewHolder(binding.root) {
 
     fun render(task: Task) {
 

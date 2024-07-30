@@ -5,7 +5,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.todoapp.databinding.ItemTaskCategoryBinding
 
 
-class CategoriesViewHolder(val binding: ItemTaskCategoryBinding) : RecyclerView.ViewHolder(binding.root) {
+class CategoriesViewHolder(private val binding: ItemTaskCategoryBinding) : RecyclerView.ViewHolder(binding.root) {
 
     fun render(taskCategory: TaskCategory, onItemSelected: (Int) -> Unit) {
 
