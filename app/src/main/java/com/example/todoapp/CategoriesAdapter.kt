@@ -6,18 +6,22 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.todoapp.databinding.ItemTaskCategoryBinding
 
 
-class CategoriesAdapter(private val categories: List<TaskCategory>, private val onItemSelected:(Int) -> Unit) :
+class CategoriesAdapter(
+    private val categories: List<TaskCategory>,
+    private val onItemSelected: (Int) -> Unit
+) :
     RecyclerView.Adapter<CategoriesViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CategoriesViewHolder {
 
-        val binding = ItemTaskCategoryBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding =
+            ItemTaskCategoryBinding.inflate(LayoutInflater.from(parent.context), parent, false)
 
-        return CategoriesViewHolder(binding)
+        return CategoriesViewHolder(binding = binding)
     }
 
     override fun onBindViewHolder(holder: CategoriesViewHolder, position: Int) {
-        holder.render(categories[position], onItemSelected)
+        holder.render(taskCategory = categories[position], onItemSelected)
     }
 
     override fun getItemCount() = categories.size

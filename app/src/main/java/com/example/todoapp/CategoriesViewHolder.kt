@@ -5,7 +5,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.todoapp.databinding.ItemTaskCategoryBinding
 
 
-class CategoriesViewHolder(private val binding: ItemTaskCategoryBinding) : RecyclerView.ViewHolder(binding.root) {
+class CategoriesViewHolder(private val binding: ItemTaskCategoryBinding) :
+    RecyclerView.ViewHolder(binding.root) {
 
     fun render(taskCategory: TaskCategory, onItemSelected: (Int) -> Unit) {
 
@@ -15,28 +16,44 @@ class CategoriesViewHolder(private val binding: ItemTaskCategoryBinding) : Recyc
             R.color.todo_background_disabled
         }
 
-        binding.root.setCardBackgroundColor(ContextCompat.getColor(binding.root.context, color))
+        binding.root.setCardBackgroundColor(
+            ContextCompat.getColor(
+                binding.root.context,
+                color
+            )
+        )
 
         // layoutPosition to get position
         itemView.setOnClickListener { onItemSelected(layoutPosition) }
 
         when (taskCategory) {
             TaskCategory.Business -> {
-               binding.tvCategoryName.text = "Business"
+                binding.tvCategoryName.text = "Business"
                 binding.vDivider.setBackgroundColor(
-                    ContextCompat.getColor(binding.vDivider.context, R.color.todo_business_category)
+                    ContextCompat.getColor(
+                        binding.vDivider.context,
+                        R.color.todo_business_category
+                    )
                 )
             }
+
             TaskCategory.Other -> {
-               binding.tvCategoryName.text = "Others"
+                binding.tvCategoryName.text = "Others"
                 binding.vDivider.setBackgroundColor(
-                    ContextCompat.getColor(binding.vDivider.context, R.color.todo_other_category)
+                    ContextCompat.getColor(
+                        binding.vDivider.context,
+                        R.color.todo_other_category
+                    )
                 )
             }
+
             TaskCategory.Personal -> {
-               binding.tvCategoryName.text = "Personal"
+                binding.tvCategoryName.text = "Personal"
                 binding.vDivider.setBackgroundColor(
-                    ContextCompat.getColor(binding.vDivider.context, R.color.todo_personal_category)
+                    ContextCompat.getColor(
+                        binding.vDivider.context,
+                        R.color.todo_personal_category
+                    )
                 )
             }
         }

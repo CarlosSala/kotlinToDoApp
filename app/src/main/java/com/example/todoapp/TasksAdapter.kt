@@ -5,14 +5,14 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.todoapp.databinding.ItemTodoTaskBinding
 
-class TasksAdapter(var taskList: List<Task>, private val onTaskSelected: (Int) -> Unit) :
+class TasksAdapter(var taskList: List<Task>, private val onItemSelected: (Int) -> Unit) :
     RecyclerView.Adapter<TasksViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TasksViewHolder {
 
         val binding =
             ItemTodoTaskBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-        return TasksViewHolder(binding)
+        return TasksViewHolder(binding = binding)
     }
 
     override fun onBindViewHolder(holder: TasksViewHolder, position: Int) {
@@ -23,7 +23,7 @@ class TasksAdapter(var taskList: List<Task>, private val onTaskSelected: (Int) -
 
         // itemView is all cell where is the item
         // when there is a click, it is activated lambda function
-        holder.itemView.setOnClickListener { onTaskSelected(position) }
+        holder.itemView.setOnClickListener { onItemSelected(position) }
     }
 
     override fun getItemCount() = taskList.size

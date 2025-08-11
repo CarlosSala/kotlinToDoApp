@@ -90,7 +90,7 @@ class MainActivity : AppCompatActivity() {
         rvCategories.layoutManager =
             LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
 
-        categoriesAdapter = CategoriesAdapter(categoryList) {
+        categoriesAdapter = CategoriesAdapter(categories = categoryList) {
                 position -> updateCategories(position)
         }
 
